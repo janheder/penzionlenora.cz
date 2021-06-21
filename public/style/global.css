@@ -115,7 +115,12 @@ header::before{
 .header-content h1{
   font-size: 60px;
   margin-bottom: 20px;
+  text-align: center;
 }
+.header-cta{
+  text-align: center;
+}
+
 .header-content .btn{
   margin: 20px;
 }
@@ -141,3 +146,19 @@ h2 {
   font-size: clamp(1.5rem, 1rem + 1.25vw, 2rem);
 }
 
+@media screen and (max-width: 991px){
+  nav .container >div{
+    display: none;
+  }
+  nav div a {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header-content {
+  padding: 200px 0;
+}
+
+}
