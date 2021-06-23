@@ -13,11 +13,21 @@ import Nav from '../components/Nav.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <link rel="stylesheet" href="/style/global.css">
+    <link type="text/css" rel="stylesheet" href="/style/photoswipe.css">
+    <link type="text/css" rel="stylesheet" href="/style/default-skin/default-skin.css">
 
 
-    <style>
 
-    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPC6B9BNV4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZPC6B9BNV4');
+    </script>
+
+
 </head>
 <body>
 
@@ -40,68 +50,199 @@ import Nav from '../components/Nav.astro';
     <main>
     
 
-    <section id="informace">
-        <div class="container">
-            <h1>Ubytování</h1>
-            <p>V nabídce máme pro vás jednolůžkové, dvoulůžkové a třílůžkové pokoje pro 31 hostů.</p>
-            <p>Všechny pokoje jsou vybaveny vlastní koupelnou s umývadlem a sprchovým koutem, sociálním zařízením, TV, wifi na pokoji.</p>
-            <p>Ručníky a osušky včetně mýdla na každém pokoji.</p>
-            <i>Taktéž dezinfekce.</i>
-            <p>Ubytování s domácími mazlíky za poplatek</p>
-            <p>Možnost ubytování od 14,00 hod., uvolnění pokoje v den odjezdu v 11,00 hod.</p>
-        </div>
+
+
+        <section>
+            <div class="container">
+                <h1>Fotogalerie</h1>
+
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/assets/img1.jpg" itemprop="contentUrl" data-size="1920x1280">
+                            <img src="/assets/img1-small.jpg" itemprop="thumbnail" alt="Pokoj 1" />
+                        </a>
+                        <figcaption itemprop="caption description">Pokoj 1</figcaption>                                     
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/assets/img2.jpg" itemprop="contentUrl" data-size="1920x1280">
+                            <img src="/assets/img2-small.jpg" itemprop="thumbnail" alt="Pokoj 1" />
+                        </a>
+                        <figcaption itemprop="caption description">Pokoj 1</figcaption>                                     
+                    </figure>
+
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/assets/img3.jpg" itemprop="contentUrl" data-size="1920x1280">
+                            <img src="/assets/img3-small.jpg" itemprop="thumbnail" alt="Pokoj 1" />
+                        </a>
+                        <figcaption itemprop="caption description">Pokoj 1</figcaption>                                     
+                    </figure>
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="informace">
+            <div class="container">
+                <h1>Ubytování</h1>
+                <p>V nabídce máme pro vás jednolůžkové, dvoulůžkové a třílůžkové pokoje pro 31 hostů.</p>
+                <p>Všechny pokoje jsou vybaveny vlastní koupelnou s umývadlem a sprchovým koutem, sociálním zařízením, TV, wifi na pokoji.</p>
+                <p>Ručníky a osušky včetně mýdla na každém pokoji.</p>
+                <i>Taktéž dezinfekce.</i>
+                <p>Ubytování s domácími mazlíky za poplatek</p>
+                <p>Možnost ubytování od 14,00 hod., uvolnění pokoje v den odjezdu v 11,00 hod.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Stravování</h1>
+                <p>Nově otevřená restaurace s kuchyní a výčepem nabízí tradiční českou kuchyni i minutková jídla.</p>
+                <p>Snídaně, polopenze a plná penze formou bufetu</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Další služby</h1>
+                <p>Parkování zdarma u penzionu, posezení venku, možnost grilování, uzamykatelná úschovna kol, lyží.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Odpočinek a sportovní vyžití</h1>
+                <p>Pěší turistika, cyklostezky, rybolov, houbaření, půjčovna kanoí v místě (Vltava), běžecké trasy v okolí</p>
+                <p>Hranice s Německem 11 km – sjezdovky 6-12 km, SKI centrum 2 km za hranicemi</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Ceník</h1>
+                <p>Ubytování za osobu a den 400,- Kč včetně snídaně.</p>
+                <p>Děti 2 – 10 let  50% sleva na ubytování</p>
+                <p>Děti do 2 let zdarma bez nároku na lůžko a snídani</p>
+                <p>Pes 100,-Kč/den</p>
+
+                <p>Ubytování včetně polopenze 580,- Kč/osoba/den</p>
+                <p>Ubytování včetně plné penze 720,- Kč/osoba/den</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Upozornění</h1>
+                <p>K celkové ceně je nutné počítat s povinným poplatkem 20,- Kč/osoba/den pro OÚ Lenora. </p>
+                <p>Týká se osob starších 18ti let.</p>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <h1>Kde nás najdete</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.6364630998173!2d13.79519012794013!3d48.92231810965786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774bf0ba90ef08f%3A0xa0dca40d89230303!2sPenzion%20Lenora!5e0!3m2!1scs!2scz!4v1624274404650!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
     </section>
-
-    <section>
-        <div class="container">
-            <h1>Stravování</h1>
-            <p>Nově otevřená restaurace s kuchyní a výčepem nabízí tradiční českou kuchyni i minutková jídla.</p>
-            <p>Snídaně, polopenze a plná penze formou bufetu</p>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h1>Další služby</h1>
-            <p>Parkování zdarma u penzionu, posezení venku, možnost grilování, uzamykatelná úschovna kol, lyží.</p>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h1>Odpočinek a sportovní vyžití</h1>
-            <p>Pěší turistika, cyklostezky, rybolov, houbaření, půjčovna kanoí v místě (Vltava), běžecké trasy v okolí</p>
-            <p>Hranice s Německem 11 km – sjezdovky 6-12 km, SKI centrum 2 km za hranicemi</p>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h1>Ceník</h1>
-            <p>Ubytování za osobu a den 400,- Kč včetně snídaně.</p>
-            <p>Děti 2 – 10 let  50% sleva na ubytování</p>
-            <p>Děti do 2 let zdarma bez nároku na lůžko a snídani</p>
-            <p>Pes 100,-Kč/den</p>
-
-            <p>Ubytování včetně polopenze 580,- Kč/osoba/den</p>
-            <p>Ubytování včetně plné penze 720,- Kč/osoba/den</p>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h1>Upozornění</h1>
-            <p>K celkové ceně je nutné počítat s povinným poplatkem 20,- Kč/osoba/den pro OÚ Lenora. </p>
-            <p>Týká se osob starších 18ti let.</p>
-        </div>
-    </section>
-
-
 
 
 
 
     </main>
+
+
+
+
+
+    <script src="/js/photoswipe.min.js"></script>
+
+    <script src="/js/photoswipe-ui-default.min.js"></script>
+
+    <script src="/js/scripts.js"></script>
+
+
+
+
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
 
 
 </body>

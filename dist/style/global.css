@@ -114,7 +114,7 @@ header::before{
 
 .header-content h1{
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .header-cta{
@@ -161,4 +161,17 @@ h2 {
   padding: 200px 0;
 }
 
+}
+
+figcaption{
+  display: none;
+}
+
+.my-gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figure{
+  padding: 10px;
 }
