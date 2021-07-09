@@ -163,6 +163,9 @@ h2 {
   .header-content {
     padding: 160px 0;
   }
+  .header-content h1{
+    font-size: 48px;
+  }
   section h1{
     font-size: 28px;
     font-weight: 500;
